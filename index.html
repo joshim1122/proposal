@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Will You Marry Me?</title>
+  <style>
+    body {
+      background: linear-gradient(to right, #ffb6c1, #ffe4e1);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      color: #333;
+    }
+    h1 {
+      font-size: 3em;
+      color: crimson;
+    }
+    p {
+      font-size: 1.5em;
+    }
+    .btn {
+      background: crimson;
+      color: white;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 30px;
+      font-size: 1.2em;
+      cursor: pointer;
+      margin: 10px;
+      transition: 0.3s;
+    }
+    .btn:hover {
+      background: darkred;
+    }
+    .heart {
+      font-size: 4em;
+      animation: beat 1s infinite;
+      color: crimson;
+    }
+    @keyframes beat {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.2); }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="heart">❤️</div>
+  <h1>Will You Marry Me?</h1>
+  <p>Because life feels incomplete without you...</p>
+  <button class="btn" onclick="alert('Aww 🥰 You said YES!')">Yes</button>
+  <button class="btn" onclick="alert('I will wait... 😢')">No</button>
+
+</body>
+</html>
